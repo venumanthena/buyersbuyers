@@ -1,0 +1,42 @@
+.wrapper{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+    transition: all 1s ease;
+
+    &.showAnim{
+        background-color: #080051;
+        height: 70px;
+    }
+      
+
+    .subContainer{
+        width: 1260px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media only screen and (max-width: 1140px) {
+    .wrapper{
+        background-color: #080051;
+        height: 70px;
+
+    }
+ }
+
+
+
+
+

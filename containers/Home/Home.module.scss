@@ -1,0 +1,541 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  .introSection {
+    display: flex;
+    min-height: 640px;
+    display: flex;
+    width: 100%;
+    background: url("https://s3.ap-southeast-2.amazonaws.com/media.buyersbuyers.com.au/wp-content/uploads/20211110061716/BB_Homepage_Brandmark.jpg")
+      center center #ccc;
+    background-size: cover;
+    align-items: center;
+    padding: 0 20px;
+
+    &:before {
+      content: "";
+      background: rgba(8, 0, 81, 0.4);
+      width: 100%;
+      position: absolute;
+      display: flex;
+      top: 0;
+      height: 640px;
+      left: 0;
+      right: 0;
+    }
+
+    .introText {
+      display: flex;
+      flex-direction: column;
+      max-width: 813px;
+      align-items: flex-start;
+      z-index: 9;
+      position: relative;
+
+      .title {
+        font-size: 50px;
+        color: #fff;
+        display: flex;
+        justify-content: left;
+        line-height: 59px;
+        font-weight: 300;
+      }
+
+      .desc {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 200;
+        margin: 20px 0;
+        line-height: 30px;
+      }
+
+      .btn {
+        display: inline-flex;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: #fff;
+        background-color: #ff4f00;
+      }
+    }
+  }
+
+  .middleSection {
+    padding: 55px 20px 45px 20px;
+
+    .saveTimeSection {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .title {
+        display: flex;
+        justify-content: center;
+        color: #080051;
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 49px;
+        letter-spacing: 0;
+      }
+
+      .desc {
+        display: flex;
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0;
+        color: rgba(39, 39, 39, 0.9);
+        padding: 0 10px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .list {
+      display: flex;
+      margin-bottom: 30px;
+
+      .item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+
+        .check {
+          display: flex;
+          color: #ff4f00;
+          margin-bottom: 15px;
+          justify-content: center;
+        }
+
+        .title {
+          margin-bottom: 20px;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 0;
+          text-align: center;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          color: rgba(39, 39, 39, 0.9);
+        }
+
+        .desc {
+          color: rgba(39, 39, 39, 0.9);
+          line-height: 21px;
+          font-size: 16px;
+          text-align: center;
+          display: flex;
+        }
+      }
+    }
+
+    .btnSection {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0px 50px 0px;
+      .btn {
+        display: inline-flex;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: #fff;
+        background-color: #ff4f00;
+      }
+    }
+
+    .secure {
+      margin: 40px 10px 40px 10px;
+      justify-content: center;
+      display: flex;
+      color: #080051;
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    .video {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .chooseServicesSection {
+    padding: 55px 20px 45px 20px;
+    background-color: #080051;
+
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 66%;
+
+      .title {
+        display: flex;
+        justify-content: left;
+        color: #080051;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .desc {
+        display: flex;
+        text-align: left;
+        line-height: 25px;
+        letter-spacing: 0;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 40px;
+        font-weight: 200;
+      }
+    }
+
+    .list {
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: space-between;
+      width: 100%;
+
+      .item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3% 25% 3% 3%;
+        padding: 25px 25px 40px 25px;
+        background-color: #2b2084;
+        width: 30%;
+        height: 417px;
+        position: relative;
+
+        .icon {
+          display: flex;
+          color: #ff4f00;
+          margin-bottom: 15px;
+          justify-content: right;
+        }
+
+        .title {
+          margin-bottom: 20px;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 0;
+          text-align: center;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: left;
+          color: #fff;
+        }
+
+        .desc {
+          color: #272727;
+          line-height: 21px;
+          font-size: 16px;
+          text-align: left;
+          display: flex;
+          color: #fff;
+          margin-bottom: 25px;
+          flex-wrap: wrap;
+        }
+
+        .btn {
+          padding: 10px 15px;
+          border-radius: 5px 5px 5px 5px;
+          color: #fff;
+          background-color: #ff4f00;
+          position: absolute;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .mapExpertSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 20px;
+    width: 100%;
+
+    .mapContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .map {
+        display: inline-flex;
+        height: 864px;
+        width: 66%;
+        max-width: 787px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .mapDesc {
+        display: inline-flex;
+        flex-direction: column;
+        width: 32%;
+
+        .title {
+          color: #080051;
+          font-size: 40px;
+          line-height: 49px;
+          display: flex;
+          margin-bottom: 40px;
+        }
+
+        .desc {
+          color: #272727;
+          font-size: 20px;
+          line-height: 26px;
+          display: flex;
+          margin-bottom: 25px;
+        }
+
+        .desc2 {
+          color: #272727;
+          font-size: 20px;
+          line-height: 26px;
+          display: flex;
+        }
+
+        .btn {
+          display: flex;
+          border-radius: 5px;
+          padding: 10px 15px;
+          color: #fff;
+          background-color: #ff4f00;
+          margin-top: 40px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  .contactBtn{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4f00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    font-size: 20px;
+    color: #fff;
+
+  }
+
+  .contactBox{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #ff4f00;
+    padding:10px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 99;
+    border:1px solid #ff4f00;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    .heading{
+      display: flex;
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+
+      .closeIcon{
+        right: 10px;
+        position: absolute;
+        cursor: pointer;
+
+      }
+    }
+
+    .text{
+      display: flex;
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 10px;
+
+      &:last-child{
+        margin-bottom: 0px;
+      }
+
+      .title{
+        display: flex;
+        margin-left: 10px;
+      }
+
+    }
+
+  }
+
+
+
+
+}
+
+.subContainer {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 850px) {
+  .wrapper {
+    .introSection {
+      min-height: 440px;
+
+      &:before {
+        height: 440px;
+      }
+      .introText {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+        .title {
+          font-size: 35px;
+          line-height: 43px;
+        }
+
+        .desc {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .middleSection {
+      padding: 55px 20px 45px 20px;
+
+      .saveTimeSection {
+        .title {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        .desc {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+
+      .list {
+        .item {
+          .title {
+            font-size: 18px;
+            line-height: 25px;
+          }
+
+          .desc {
+            line-height: 21px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .list {
+        flex-direction: column;
+        align-items: center;
+
+        .item {
+          width: 100%;
+        }
+      }
+
+      .secure {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+      }
+    }
+
+    .chooseServicesSection {
+      .services {
+        max-width: 100%;
+
+        .title {
+          font-size: 30px;
+          line-height: 36px;
+          justify-content: center;
+        }
+      }
+
+      .list {
+        flex-direction: column;
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
+          height: 300px;
+
+          .icon {
+            justify-content: center;
+
+            img {
+              width: 90px;
+            }
+          }
+
+          .title {
+            justify-content: center;
+            font-size: 18px;
+          }
+
+          .desc {
+            justify-content: center;
+            font-size: 14px;
+          }
+
+          .btn {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+
+    .mapExpertSection {
+      .mapContainer {
+        flex-direction: column;
+        justify-content: center;
+
+        .map {
+          width: 100%;
+          height: 440px;
+        }
+        .mapDesc {
+          width: 100%;
+
+          .title {
+            margin-top: 40px;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            justify-content: center;
+          }
+
+          .desc,
+          .desc2 {
+            font-size: 18px;
+            line-height: 25px;
+          }
+
+          .btn {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.hamburgerIcon {
+  font-size: 30px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.wrapper {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+
+
+
+
+
+  &.showMenu {
+    display: flex;
+  }
+
+  .listItem {
+    padding-bottom: 7px;
+    transition: all 0.4s;
+    border-bottom: 2px solid #ccc;
+    color: #272727;
+    cursor: pointer;
+    position: relative;
+    font-weight: 200;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.4s ease;
+    justify-content: center;
+    text-align: center;
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .subMenu {
+      display: none;
+      position: relative;
+      top: 0px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 20px;
+      transition: all 0.4s ease;
+
+      &.showSubMenu {
+        display: flex;
+      }
+
+      .subListItem {
+        color: #272727;
+        display: inline-flex;
+        background-color: #ccc;
+        justify-content: center;
+        width: 115px;
+        padding: 10px;
+        font-size: 13px;
+        transition: all 0.4s ease;
+        width: 100%;
+
+        &:hover {
+          background-color: #ff4f00;
+          font-weight: 600;
+          color: #fff;
+        }
+
+        &:first-child {
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+        }
+
+        &:last-child {
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: #eee;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .hamburgerIcon {
+    display: flex;
+  }
+
+  .wrapper {
+    .showMenu {
+      display: flex;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .hamburgerIcon {
+      display: flex;
+    }
+  
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+      .showMenu {
+        display: flex;
+      }
+    }
+  }
