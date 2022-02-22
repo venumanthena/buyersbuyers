@@ -11,7 +11,7 @@
 1) I have completed the home page with some sections in 5.00 hrs time. 30 mins went in finding exact font, spacing, color, line height etc. i have not completed the entire home page along with few transitions on the page as that would take another 1 hr. 
 2) Made the home page completely responsive. Fixed the responsive issues which are existing on live site left aligned, animation in responsive etc.
 3) I have kept the button padding consistent throught the page. Padding was different for different buttons in the existing live site.
-4) I have used React to build the components. Used Sass for styling.
+4) I have used React to build the components so that components can be resused in future. Used Sass for styling.
 5) Introduced the scroll to top button in the bottom right corner of the page as mentioned in my feedback. 
 6) Header Menu is built again and revamped for the responsive section.
 7) Corrected the contact us box by introducing a title and aligning with cross button
