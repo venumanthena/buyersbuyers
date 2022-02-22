@@ -15,6 +15,7 @@
 5) Introduced the scroll to top button in the bottom right corner of the page as mentioned in my feedback. 
 6) Header Menu is built again and revamped for the responsive section.
 7) Corrected the contact us box by introducing a title and aligning with cross button
+8) Corrected many responsive issues to make everything look consistent.
 
 
 
